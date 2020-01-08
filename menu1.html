@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title> clearm's github</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta property="og:type" content="website">
-<meta property="og:image" content="">
-<meta property="og:title" content="test page">
-<meta property="og:description" content="good test">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> clearm's github</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="test page">
+    <meta property="og:description" content="good test">
 
-<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<!-- <link rel="stylesheet" href="css/index.css" > -->
-<style>
-    .fakeimg-div {
-       height: 200px;
-       background: #aaa;
-     }
-     .fake-img {
-         width:100%;
-          height: 200px;
-     }
-
-</style>
-
+    <!-- <link rel="stylesheet" href="css/index.css" > -->
+    <style>
+        .fakeimg-div {
+           height: 200px;
+           background: #aaa;
+         }
+         .fake-img {
+             width:100%;
+              height: 200px;
+         }
+    </style>
 </head>
 <body>
 
@@ -47,27 +45,27 @@
 <!--//   Menu  -->
 <script>
 
-var menu_json = {"About Me": "index.html"
-, "현실" : "menu1.html"
-,"꿈": "menu2.html"
-,"목표": "menu3.html"
-,"성과":"menu4.html"
-}
+    var menu_json = {"About Me": "index.html"
+    , "현실" : "menu1.html"
+    ,"꿈": "menu2.html"
+    ,"목표": "menu3.html"
+    ,"성과":"menu4.html"
+    }
 
-function fn_makeMenu(selected_key)
-{
-    var menu_li = '';
-    $.each(menu_json, function(key,val) {
-        var sel = (key == selected_key) ? "active" : "";
+    function fn_makeMenu(selected_key)
+    {
+        var menu_li = '';
+        $.each(menu_json, function(key,val) {
+            var sel = (key == selected_key) ? "active" : "";
 
-        menu_li += '<li class="nav-item"><a class="nav-link '+sel+'" href="'+val+'"> '+key+'</a></li>';
-    });
+            menu_li += '<li class="nav-item"><a class="nav-link '+sel+'" href="'+val+'"> '+key+'</a></li>';
+        });
 
-    $("#collapsibleNavbar ul > *").remove();
-    $("#collapsibleNavbar ul ").append(menu_li);
-}
+        $("#collapsibleNavbar ul > *").remove();
+        $("#collapsibleNavbar ul ").append(menu_li);
+    }
 
-fn_makeMenu('현실');
+    fn_makeMenu('현실');
 </script>
 
 
@@ -90,12 +88,26 @@ fn_makeMenu('현실');
             <div class="fakeimg-div">Fake Image</div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
             <br>
             <h2>TITLE HEADING</h2>
             <h5>Title description, Sep 2, 2017</h5>
             <div class="fakeimg-div">Fake Image</div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+            <br>
+            <h2>TITLE HEADING</h2>
+
+            <br>
+            <h2>TITLE HEADING</h2>
+
+            <br>
+            <h2>TITLE HEADING</h2>
+
+
+
           </div> <!--// col-sm-8 -->
 
       </div><!--// row -->

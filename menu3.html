@@ -13,17 +13,134 @@
 <meta property="og:title" content="test page">
 <meta property="og:description" content="good test">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- <link rel="stylesheet" href="css/index.css" > -->
+<style>
+    .fakeimg-div {
+       height: 200px;
+       background: #aaa;
+     }
+     .fake-img {
+         width:100%;
+          height: 200px;
+     }
+
+</style>
 
 </head>
 <body>
 
-<div class="container" style="margin-top:20px">
+<!--  Menu  -->
+<nav  class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom:25px;">
+  <a class="navbar-brand" href="https://clearm.github.io/new2020/"> MJH </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav"> </ul>
+  </div>
+</nav>
+<!--//   Menu  -->
+<script>
+
+var menu_json = {"About Me": "index.html"
+, "현실" : "menu1.html"
+,"꿈": "menu2.html"
+,"목표": "menu3.html"
+,"성과":"menu4.html"
+}
+
+function fn_makeMenu(selected_key)
+{
+    var menu_li = '';
+    $.each(menu_json, function(key,val) {
+        var sel = (key == selected_key) ? "active" : "";
+
+        menu_li += '<li class="nav-item"><a class="nav-link '+sel+'" href="'+val+'"> '+key+'</a></li>';
+    });
+
+    $("#collapsibleNavbar ul > *").remove();
+    $("#collapsibleNavbar ul ").append(menu_li);
+}
+
+fn_makeMenu('목표');
+</script>
+
+
+<div class="container-fluid" style="margin-top:15px;" >
+  <h2> 목표 is </h2>
+  <p>  무언가 바라면 이루어 진다 했다. 그런 소망들을 적어 놓으려함.  </p>
 </div>
+
+<div class="container" style="margin-top:15px;" >
+
+      <div class="row" style="height:620px;">
+          <div class="col-sm-12">
+
+             <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                  소원 1
+              </button>
+
+              <!-- Button to Open the Modal -->
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                 소원 1 2
+               </button>
+
+
+               <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                  Open modal 3
+                </button>
+
+
+                <!-- Button to Open the Modal -->
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                   Open modal 3
+                 </button>
+
+
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Modal body..
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                <!--// The Modal -->
+
+          </div> <!--// col-sm-12 -->
+
+      </div><!--// row -->
+
+</div> <!--//   container  -->
+
+<!--  Bottom  -->
+<div class=" text-center bg-dark" style="padding:30px;margin:10px; color:white" >
+ <p>Create By MJH & Bootstrap 4  </p>
+</div> <!--//   Bottom  -->
+
 
 </body>
 </html>
