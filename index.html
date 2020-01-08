@@ -20,17 +20,22 @@
 
 <!-- <link rel="stylesheet" href="css/index.css" > -->
 <style>
-    .fakeimg {
+    .fakeimg-div {
        height: 200px;
        background: #aaa;
      }
+     .fake-img {
+         width:100%;
+          height: 200px;
+     }
+
 </style>
 
 </head>
 <body>
 
 <!--  Menu  -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom:25px;">
   <a class="navbar-brand" href="/"> MJH </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -60,11 +65,16 @@
       <div class="row">
 
           <div class="col-sm-4">
-            <h2>About Me</h2>
+            <h2>About Me (나에 대해)</h2>
             <h5> Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
+            <div class="fakeimg-div"> <img class="fake-img" src="http://clearm.github.io/new2020/img/jkandjp.jpg"  > </div>
             <p> </p>
-            <h3>Some Links</h3>
+            <h2> This site is </h2>
+            <h5> 나의 이력서를 위한 사이트 </h5>
+            <p> 2020년부터 시작하여 많은 것을 채워갈 곳 </p>
+            <p> 정말 잘만들고 나면 서버구매도 결정될 사이트  </p>
+
+            <!-- <h3>Some Links</h3>
             <p>Lorem ipsum dolor sit ame.</p>
             <ul class="nav nav-pills flex-column">
               <li class="nav-item">
@@ -80,32 +90,45 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
               </li>
             </ul>
-            <hr class="d-sm-none">
-          </div>
+            <hr class="d-sm-none"> -->
+
+
+          </div><!-- //col-sm-4 -->
 
           <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <!-- 보통 여기가 반복되겠지?? -->
+            <h2>나의 11년 </h2>
+            <h5> 정확히는 2020년 1월로 보자면 11년 5개월 </h5>
+            <div class="fakeimg-div">Fake Image</div>
+            <p> 이미지에 대한 설명 들어가야 할까? </p>
+            <p> 긴글이 들어가야 겠지 </p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
+            <!-- 여기가 두번째 글  -->
+            <h2> 앞으로의 11년 </h2>
+            <h5> 작성일 : 2020-01-30</h5>
+            <div class="fakeimg-div">Fake Image</div>
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </div>
 
-      </div>
+            <br>
+            <!-- 여기가 두번째 글  -->
+            <h2> 앞으로의 11년 </h2>
+            <h5> 작성일 : 2020-01-30</h5>
+            <div class="fakeimg-div">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
+          </div><!--// col-sm-8 -->
+          <hr class="d-sm-none">
+      </div><!--// row -->
 
 </div> <!--//   container  -->
 
 <!--  Bottom  -->
 <div class=" text-center bg-dark" style="padding:30px;color:white" >
- <p>Create By MJH & Bootstrap 4  </p>
+ <p> Create By MJH & Bootstrap 4  </p>
 </div> <!--//   Bottom  -->
-
 
 </body>
 </html>
