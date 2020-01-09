@@ -46,12 +46,15 @@
 </nav>
 <!--//   Menu  -->
 <script>
+var selected_menu = "목표";
 
-var menu_json = {"About Me": "index.html"
-, "현실" : "menu1.html"
-,"꿈": "menu2.html"
-,"목표": "menu3.html"
-,"성과":"menu4.html"
+var menu_json = {
+"About Me" : "index.html"
+,"현실" : "menu1.html"
+,"꿈" : "menu2.html"
+,"목표" : "menu3.html"
+,"성과" : "menu4.html"
+,"휴지통" : "trash.html"
 }
 
 function fn_makeMenu(selected_key)
@@ -67,7 +70,8 @@ function fn_makeMenu(selected_key)
     $("#collapsibleNavbar ul ").append(menu_li);
 }
 
-fn_makeMenu('목표');
+fn_makeMenu(selected_menu);
+
 </script>
 
 

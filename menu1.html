@@ -44,6 +44,7 @@
 </nav>
 <!--//   Menu  -->
 <script>
+    var selected_menu = "현실";
 
     var menu_json = {"About Me": "index.html"
     , "현실" : "menu1.html"
@@ -65,7 +66,8 @@
         $("#collapsibleNavbar ul ").append(menu_li);
     }
 
-    fn_makeMenu('현실');
+    fn_makeMenu(selected_menu);
+
 </script>
 
 

@@ -46,6 +46,7 @@
 </nav>
 <!--//   Menu  -->
 <script>
+var selected_menu = "꿈";
 
 var menu_json = {"About Me": "index.html"
 , "현실" : "menu1.html"
@@ -67,7 +68,7 @@ function fn_makeMenu(selected_key)
     $("#collapsibleNavbar ul ").append(menu_li);
 }
 
-fn_makeMenu('꿈');
+fn_makeMenu(selected_menu);
 </script>
 
 
