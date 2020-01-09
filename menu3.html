@@ -91,28 +91,55 @@ fn_makeMenu(selected_menu);
           <div class="col-sm-12">
 
             <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            소원 1
-            </button>
-
+            <button type="button" id="sowon1" class="btn btn-primary" data-toggle="modal" data-target="#myModal"></button>
             <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-            소원 1 2
-            </button>
+            <button type="button" id="sowon2" class="btn btn-success" data-toggle="modal" data-target="#myModal"></button>
 
 
             <!-- Button to Open the Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Open modal 3
             </button>
-
-
             <!-- Button to Open the Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
             Open modal 3
             </button>
           </div> <!--// col-sm-12 -->
       </div><!--// row -->
+
+
+
+      <script>
+
+      var s1 = "이 사이트를 이력서 서비스에 올릴 수 있게 만들기";
+      var s1_body = "매일 매일 커밋을 한다.";
+
+      var s2 = "다이어트";
+      var s2_body = "매일 1시간 씩 운동";
+
+
+
+
+
+      $(document).ready(function(){
+
+         $("#sowon1").text(s1);
+         $("#sowon1").click(function(){
+                $("#m_title").text(s1);
+                $("#m_body").text(s1_body);
+                // $("#myModal").modal();
+            });
+
+        $("#sowon2").text(s2);
+        $("#sowon2").click(function(){
+
+            $("#m_title").text(s2);
+            $("#m_body").text(s2_body);
+
+            // $("#myModal").modal();
+        });
+      });
+      </script>
 
 
       <div class="row" style="height:180px;">
@@ -126,8 +153,8 @@ fn_makeMenu(selected_menu);
           <div class="col-sm-12">
 
             <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            소원 1
+            <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            영어 - 이건 뭐 보통 장기가 아니지만
             </button>
 
             <!-- Button to Open the Modal -->
@@ -161,12 +188,12 @@ fn_makeMenu(selected_menu);
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title" id="m_title" >Modal Heading</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
+      <div class="modal-body" id="m_body">
         Modal body..
       </div>
 
