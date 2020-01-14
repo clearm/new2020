@@ -1,1 +1,10 @@
-body { background-color: black; }
+/* body { background-color: black; } */
+
+.fakeimg-div {
+   height: 200px;
+   background: #aaa;
+ }
+ .fake-img {
+     width:100%;
+      height: 200px;
+ }
