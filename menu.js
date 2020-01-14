@@ -7,8 +7,11 @@ var menu_json = {"About Me": "index.html"
 ,"꿈": "menu2.html"
 ,"목표": "menu3.html"
 ,"성과":"menu4.html"
+,"명언": "wise_saying.html"
+,"휴지통" : "trash.html"
 }
 
+// 메뉴 생성 
 function fn_makeMenu(selected_key)
 {
     var menu_li = '';
