@@ -28,7 +28,8 @@
 
   gtag('config', 'UA-156001275-1');
 </script>
-
+<!--for 차트  -->
+<link href="//clearm.github.io/new2020/css/apexcharts_style.css" rel="stylesheet" />
 
 
 
@@ -157,6 +158,53 @@
             <p> 공식적인 말투의 사람이 아닌 나로써 이런글을 쓰고 있다는게 쑥스럽지만 나에 대한 사이트 하나 정도는 있어야 개발자 아니냐 라는 생각에 일단 여기에 자리를 마련해 봅니다. 앞으로 쌓아갈 것이 더 많은
                 이곳의 새로운 만남이 기대 반 설렘 반으로
             </p>
+
+            <br>
+            <!-- 차트   -->
+            <h2> 나를 구성하는 것들 - 성격편 </h2>
+            <h5> 작성일 : 2020-01-30</h5>
+            <div id="myPie" class="media border p-3"  >    </div>
+            <!-- <div id="myPie2" class="media border p-3"  >    </div> -->
+            <p>
+            </p>
+            <p>  나를 구성하는 것을 정의하기는 어렵다... </p>
+
+            <script src="//clearm.github.io/new2020/vendor/apexcharts/dist/apexcharts.js"></script>
+            <script>
+
+              var options = {
+                series: [44, 55, 13, 43, 22],
+                chart: {
+                     type: 'pie',
+                     width: 380,
+                     height: 280,
+                },
+                labels: ['규칙적', '적응력', '변덕', '고집', '들어주는편'],
+                responsive: [{
+                  breakpoint: 480,
+                  options: {
+                    chart: {
+                      width: 200
+                    },
+                    legend: {
+                      position: 'bottom'
+                    }
+                  }
+                }],
+                title :{ text : "성격",
+                }
+              };
+
+              var chart = new ApexCharts(document.querySelector("#myPie"), options);
+              chart.render();
+
+              // var chart2 = new ApexCharts(document.querySelector("#myPie2"), options);
+              // chart2.render();
+
+
+            </script>
+
+
 
           </div><!--// col-sm-8 -->
           <hr class="d-sm-none">
