@@ -8,10 +8,12 @@ var menu_json = {"About Me": "index.html"
 ,"목표": "menu3.html"
 ,"성과":"menu4.html"
 ,"명언": "wise_saying.html"
+,"좋아하는 것": "menu5.html"
 ,"휴지통" : "trash.html"
+
 }
 
-// 메뉴 생성 
+// 메뉴 생성
 function fn_makeMenu(selected_key)
 {
     var menu_li = '';
