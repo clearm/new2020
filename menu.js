@@ -10,6 +10,7 @@ var menu_json = {"About Me": "index.html"
 ,"명언": "wise_saying.html"
 ,"좋아하는 것": "menu5.html"
 ,"parallax scrolling" : "parallax.html"
+,"괜찮은 레이아웃1": "layout1.html"
 
 }
 
