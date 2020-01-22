@@ -55,7 +55,7 @@
 
 <!-- menu 관련 -->
 <script>
-    var selected_menu = "명언";
+    var selected_menu = "프런트테스트";
 
     var tag = document.createElement('script');
     tag.src = "https://clearm.github.io/new2020/menu.js";
@@ -78,56 +78,114 @@
 </nav>
 <!--//   Menu  -->
 
+<style>
 
+/* The Modal (background) */
+.modal {
+  display:none ; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 
 <div class="jumbotron text-center"  >
-  <h1> 명언은 보고 또봐야함 </h1>
-  <p> 외우라고!! </p>
+  <h4>도전! front  </h4>
+  <p>  </p>
 </div>
 
 
+
 <div class="container" style="margin-top:15px;" >
-     <div class="row">
-        <div class="col-sm-4">
-          <h3 class="font_title"> 가설과 검증 </h3>
-          <p class="font_nanum_brush">변수들은 언제나 존재하지만 다양한 가설과 검증으로 그 변수를 상수로 만들어 믿음을 예측으로 바꿔놓는 과정이 스타트업이 살아남을 수 있는 길일 것이다.</p>
+
+    <div class="row" >
+        <h5>클릭하면 쫙 없어지는 효과를 내고 싶음- 그게 모달이다  : Modal Example</h5>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
         </div>
 
-        <div class="col-sm-4">
-          <h3 class="font_title"> 사업 </h3>
-          <p class="font_nanum_brush"> 큰 숲들은 잘 보인다. 우린 멀리 있으니까 </p>
-          <p class="font_nanum_brush"> 작은 틈새는 잘 안보인다. 우린 멀리 있으니까. </p>
-        </div>
-        <div class="col-sm-4">
-          <h3 class="font_title">보안 관련 </h3>
-          <p class="font_nanum_brush" > 모든 보안의 문제는 방심에서 나온다. </p>
-          <p class="font_nanum_brush" > All security problems arise from a lack of attention.</p>
-        </div>
-      </div>
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    </div>
+    <br>
+    <div class="row">
 
 
-      <div class="row">
-         <div class="col-sm-4">
-           <h3 class="font_title"> 가설과 검증 </h3>
-           <p class="font_nanum_brush">변수들은 언제나 존재하지만 다양한 가설과 검증으로 그 변수를 상수로 만들어 믿음을 예측으로 바꿔놓는 과정이 스타트업이 살아남을 수 있는 길일 것이다.</p>
-         </div>
 
-         <div class="col-sm-4">
-           <h3 class="font_title"> 사업 </h3>
-           <p class="font_nanum_brush"> 큰 숲들은 잘 보인다. 우린 멀리 있으니까 </p>
-           <p class="font_nanum_brush"> 작은 틈새는 잘 안보인다. 우린 멀리 있으니까. </p>
-         </div>
-         <div class="col-sm-4">
-           <h3 class="font_title">보안 관련 </h3>
-           <p class="font_nanum_brush" > 모든 보안의 문제는 방심에서 나온다. </p>
-           <p class="font_nanum_brush" > All security problems arise from a lack of attention.</p>
-         </div>
-       </div>
+
+    </div>
 
 </div> <!--//   container  -->
 
 <!--  Bottom  -->
-<div class=" text-center bg-dark" style="padding:30px;margin:10px; color:white" >
+<div class="container-fluied text-center bg-dark" style="padding:30px;margin:10px; color:white" >
  <p>Create By MJH & Bootstrap 4  </p>
 </div> <!--//   Bottom  -->
 
