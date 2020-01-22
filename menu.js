@@ -12,6 +12,7 @@ var menu_json = {"About Me": "index.html"
 ,"parallax scrolling" : "parallax.html"
 ,"괜찮은 레이아웃1": "layout1.html"
 ,"프런트테스트" : "front_test.html"
+,"타임라인":"timeline.html"
 
 }
 
