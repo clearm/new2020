@@ -30,6 +30,14 @@
           height: 200px;
      }
 
+input[type=text]:enabled { /* 입력 가능한 input 색 */
+background: #ffff00;
+}
+
+input[type=text]:disabled { /* 입력 불가능한 input 색 */
+background: #dddddd;
+}
+
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156001275-1"></script>
@@ -85,7 +93,7 @@ body {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: '';/* 빈 공간을 timeline뒤에 넣어라... */
   position: absolute;
   width: 6px;
   background-color: white;
@@ -201,8 +209,7 @@ body {
   }
 }
 </style>
-</head>
-<body>
+
 
 
 
