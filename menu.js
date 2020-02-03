@@ -13,7 +13,7 @@ var menu_json = {"About Me": "index.html"
 ,"괜찮은 레이아웃1": "layout1.html"
 ,"프런트테스트" : "front_test.html"
 ,"타임라인":"timeline.html"
-
+,"나의직업 타임라인": "timeline_edit.html"
 }
 
 // 메뉴 생성
