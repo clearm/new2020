@@ -175,11 +175,48 @@
         </script>
     </div>
     <br>
+    <style>
+    		div .ani {
+    			height: 150px;
+    			width: 150px;
+    			margin: 20px;
+    			background-color: orange;
+    			border-radius: 150px;
+    			line-height: 150px;
+    			text-align: center;
+    		}
+    		@-webkit-keyframes myShorthand {
+    			from { transform: rotate(-45deg); }
+    			to { transform: rotate(45deg); }
+    		}
+    		@keyframes myShorthand {
+    			from { transform: rotate(-45deg); }
+    			to { transform: rotate(45deg); }
+    		}
+    		#long {
+    			-webkit-animation-name: myShorthand;
+    			-webkit-animation-duration: 3s;
+    			-webkit-animation-timing-function: ease-in-out;
+    			-webkit-animation-delay: 1s;
+    			-webkit-animation-iteration-count: 3;
+    			-webkit-animation-direction: reverse;
+    			animation-name: myShorthand;
+    			animation-duration: 3s;
+    			animation-timing-function: ease-in-out;
+    			animation-delay: 1s;
+    			animation-iteration-count: 3;
+    			animation-direction: reverse;
+    		}
+    		#short {
+    			-webkit-animation: myShorthand 3s ease-in-out 1s 3 reverse;
+    			animation: myShorthand 3s ease-in-out 1s 3 reverse;
+    		}
+    	</style>
+
     <div class="row">
-
-
-
-
+        <h5>animation 속성을 이용한 축약 표현</h5>
+        <div id="long" class="ani">6개의 속성</div>
+        <div id="short" class="ani" >animation 속성</div>
     </div>
 
 </div> <!--//   container  -->
