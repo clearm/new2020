@@ -185,14 +185,27 @@
     			line-height: 150px;
     			text-align: center;
     		}
-    		@-webkit-keyframes myShorthand {
+    		@-webkit-keyframes myShorthand { /* 특정시간에 해당요소가 가져야 할 스타일 */
     			from { transform: rotate(-45deg); }
     			to { transform: rotate(45deg); }
     		}
     		@keyframes myShorthand {
-    			from { transform: rotate(-45deg); }
+    			from { transform: rotate(-45deg); } /* from 키워드에는 처음 스타일을 명시하고, to 키워드에는 마지막 스타일을 명시 */
     			to { transform: rotate(45deg); }
     		}
+
+            /* 이렇게 퍼센트 사용하기도 함.
+            @-webkit-keyframes movingPara {
+                   0% { border-color: red; }
+                   20% { border-color: orange; }
+                   40% { border-color: yellow; }
+                   50% { border-color: green; }
+                   60% { border-color: blue; }
+                   80% { border-color: navy; }
+                   100% { border-color: purple; }
+               }
+            */
+
     		#long {
     			-webkit-animation-name: myShorthand;
     			-webkit-animation-duration: 3s;
@@ -201,14 +214,28 @@
     			-webkit-animation-iteration-count: 3;
     			-webkit-animation-direction: reverse;
     			animation-name: myShorthand;
-    			animation-duration: 3s;
-    			animation-timing-function: ease-in-out;
-    			animation-delay: 1s;
-    			animation-iteration-count: 3;
-    			animation-direction: reverse;
+    			animation-duration: 3s; /*재생할 시간  infinite 무한반복  */
+    			animation-timing-function: ease-in-out; /*
+
+                1. linear : 애니메이션 효과가 처음부터 끝까지 일정한 속도로 진행됩니다.
+                2. ease : 기본값으로, 애니메이션 효과가 천천히 시작되어, 그다음에는 빨라지고, 마지막에는 다시 느려집니다.
+                3. ease-in : 애니메이션 효과가 천천히 시작됩니다.
+                4. ease-out : 애니메이션 효과가 천천히 끝납니다.
+                5. ease-in-out : 애니메이션 효과가 천천히 시작되어, 천천히 끝납니다.
+                6. cubic-bezier(n,n,n,n) : 애니메이션 효과가 사용자가 정의한 cubic-bezier 함수에 따라 진행됩니다.
+
+                */
+    			animation-delay: 1s; /*나타나기 전 딜레이 시간 */
+    			animation-iteration-count: 3; /*몇번 반복될 것인가  */
+    			animation-direction: reverse; /*애니의 진행방향
+                진행 방향을 나타내는 속성값으로 reverse와 alternate를 설정할 수 있습니다.
+                reverse 속성값은 애니메이션 효과의 진행 방향을 원래 방향이 아닌 반대 방향으로 변경합니다.
+                즉, 애니메이션 효과가 from에서 to 방향이 아닌, to에서 from 방향으로 진행됩니다.
+                alternate 속성값은 한번씩 번복 from to 에서 to from 다시 반대로 뭐 이런식
+                */
     		}
     		#short {
-    			-webkit-animation: myShorthand 3s ease-in-out 1s 3 reverse;
+    			-webkit-animation: myShorthand 3s ease-in-out 1s 3 reverse; /* 순서만 맞는다면 이렇게 축약해서 사용하기도 */
     			animation: myShorthand 3s ease-in-out 1s 3 reverse;
     		}
     	</style>
