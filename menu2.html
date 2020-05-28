@@ -87,9 +87,43 @@
             <p> 언젠가는 내사업을 해야지 하고 생각하고 있는 것은 모든 회사원의 꿈일지도 ... 그래서 목표가 아닌 꿈 영역에 넣어 둡니다.       </p>
             <br>
 
-            <h2> TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg-div">Fake Image</div>
+            <h2> 전광판 효과</h2>
+            <h5> 2020.05.28 </h5>
+            <div class="fakeimg-div">
+
+                <ul id="scroller">
+                    <li> 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li> 2. Maecenas sollicitudin, ante id ultrices consectetur, ipsum nisl varius ipsum, sit amet congue eros nulla vitae urna.</li>
+                    <li> 3. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </li>
+                    <li> 4. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </li>
+                </ul>
+
+            </div>
+            <script>
+            var exe_cnt = 1;
+
+            function fn_list_rolling()
+            {
+                var li_tot = $("#scroller > li").length;
+
+                if(exe_cnt == li_tot){
+                    exe_cnt = 1;
+                }
+
+                var li_obj = "#scroller > li:nth-child("+exe_cnt+")";
+                $(li_obj).hide();
+                //    $(li_obj).text(" ");
+                // $(li_obj).text(li_txt[exe_cnt]);
+                $(li_obj).show( "blind", "", 500, console.log("aaa"));
+                //console.log(exe_cnt);
+                exe_cnt++;
+            }
+
+            var a = setInterval(fn_list_rolling, 2000);
+
+            </script>
+
+
             <p>Some text..</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             <br>
