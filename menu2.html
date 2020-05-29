@@ -80,8 +80,17 @@
               <div class="col-sm-12">
                 <h2> 성공하는 사업을 하고 싶습니다. </h2>
                 <h5> 시점 모르겠음...</h5>
-                <div class="fakeimg-div"> <img style="height:100%;" src="https://pbs.twimg.com/media/EO2n9MdVAAEV_ps?format=jpg&name=small" />
-                     <img style="height:100%" src="https://pbs.twimg.com/media/EO2n9MdVAAEV_ps?format=jpg&name=small" />
+                <div class="fakeimg-div">
+                    <img style="max-width:100%;height:auto;" src="https://pbs.twimg.com/media/EO2n9MdVAAEV_ps?format=jpg&name=small" />
+                    <img style="width:100%;height:100%" src="https://pbs.twimg.com/media/EO2n9MdVAAEV_ps?format=jpg&name=small" />
+                     <!-- Show Different Images Depending on Browser Width ... Resize the browser width and the image will change at 600px and 1500px.  -->
+                <picture>
+                  <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+                  <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 1500px)">
+                  <source srcset="https://www.w3schools.com/html/flowers.jpg">
+                  <img src="https://www.w3schools.com/html/img_flowers.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+
                  </div>
                 <p> 막연하니까 하고 싶은지도 모르겠다. </p>
                 <p> 언젠가는 내사업을 해야지 하고 생각하고 있는 것은 모든 회사원의 꿈일지도 ... 그래서 목표가 아닌 꿈 영역에 넣어 둡니다.       </p>
