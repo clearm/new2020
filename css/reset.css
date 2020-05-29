@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+@font-face {
+	font-family:"Malgun Gothic";
+	font-style:normal;
+	src:url(../font/MalgunGothic.eot);
+	src:local("MalgunGothic"), local("Malgun Gothic"),
+	url(../font/MalgunGothic.eot?#iefix) format("embedded-opentype"),
+	url(../font/MalgunGothic.woff) format("woff"),
+	url(../font/MalgunGothic.ttf) format("truetype");
+}
+
+/* HTML5 display-role reset for older browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; vertical-align:middle; line-height:inherit; font-size:inherit; font-family:"맑은고딕","Malgun Gothic","돋움", "Dotum";}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ul,ol,li,dl,dd{list-style:none; margin:0; padding:0;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content: none;}
+
+body {line-height:1; font-family:"Malgun Gothic","맑은고딕","돋움", "Dotum"; font-size:14px; color:#666; background:#fff;}
+html, body {height:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+li, img, input, button {vertical-align:middle;}
+a{text-decoration:none;}
+a:hover, a:active{outline:0}
+b, strong{font-weight:bold}
+img{width:100%; border:0; -ms-interpolation-mode:bicubic; vertical-align:top;}
+svg:not(:root){overflow:hidden}
+label{cursor:pointer}
+button, input, select, textarea{margin:0; vertical-align:middle; font-family:"맑은고딕","Malgun Gothic","돋움", "Dotum";}
+button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer; -webkit-appearance:button}
+button::-moz-focus-inner, input::-moz-focus-inner{border:0; padding:0}
+textarea{overflow:auto; resize:none;}
+img, object{max-width:100%; border:0}
+caption, legend{position:absolute; left:-1000%; top:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+table{border-collapse:collapse; border-spacing:0;}
+
+.blind{position:absolute; left:-1000%; top:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+.hidden{font-size:0; height:1px; left:-1000%; line-height:0; overflow:hidden; position:absolute; top:0; width:1px;}
+
+.notice{font-size:0; line-height:1; box-sizing:border-box;}
+
+/* KT forms */
+[type="text"], [type="password"]{height:auto; font-size:12px; font-size:4.6vw; padding:3% 3.413% 4%; border:1px solid #bbb; letter-spacing:-0.08em; text-align:center; box-sizing:border-box;}
+[disabled="disabled"]{background:#ddd;}
+[type="radio"]{position:absolute;left:0;top:0;width:auto;height:100%;font-size:0;line-height:0;overflow:hidden;background:none;border:0;}
+[type="radio"] + label{background:#fff url("../img/radio_off.png") left center no-repeat; background-size:auto 100%; padding:0.55% 0 2.55% 16.25%; position:relative; z-index:1;}
+[type="radio"]:checked + label{background:url("./img/radio_on.png") left center no-repeat; background-size:auto 100%;}
+[checked="checked"] + label{background:url("./img/radio_on.png") left center no-repeat; background-size:auto 100%;}
+[CHECKED="checked"] + label{background:url("./img/radio_on.png") left center no-repeat; background-size:auto 100%;}
+/*[type="radio"]:focus + label{text-decoration:underline;}*/
+label{display:inline-block; vertical-align:middle;box-sizing:border-box;}
+select{height:auto; padding:3% 3.413% 4%; font-size:12px; font-size:4.6vw; color:#777; border:1px solid #bbb; box-sizing:border-box;}
+textarea{overflow:auto; resize:none; padding:10px;}
+button{border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px;}
+
+.tts_wrap {position:relative;}
+.tts_wrap .tts {position:absolute;left:0;top:0;z-index:0;width:1px;height:1px;overflow:hidden;}
+.tts_wrap .tts * {color:transparent;background-color:transparent;}
