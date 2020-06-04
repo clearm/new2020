@@ -149,6 +149,78 @@
                </div> <!--// col-sm-12 -->
           </div><!--// row -->
 
+
+          <!-- row 새로운 기능 추가 -->
+          <div class="row">
+            <div class="col-sm-12">
+                <style>
+                @keyframes ball_move {
+                    0% {
+                        top:0px;
+                    }
+                    95% {
+                        width: 100px;
+                    }
+                    to {
+                        top:300px;
+                        width:115px;
+                        height:90px
+                    }
+                }
+
+                .ball_round {
+                  position:relative;
+                  left: 100px;
+                  top:0;
+                  width:100px;
+                  height:100px;
+                  border-radius:50%;
+                  background:#000;
+                  animation:ball_move 1s ease-in Infinite Alternate;
+                }
+
+                 .ball_square {
+                  position:relative;
+                  left: 100px;
+                  top:0;
+                  width:100px;
+                  height:100px;
+                  background:#000;
+                  animation:ball_move 1s ease-in Infinite Alternate;
+                }
+                .layout_ball {
+                    width: 200px;
+                    height:400px;
+                }
+                </style>
+
+                <div class="layout_ball">
+
+                    <div id="ball" class="ball_round"></div>
+
+                </div>
+
+                <script>
+
+                $("#ball").click(function(){
+
+                    if($("#ball").hasClass("ball_round") == true){
+                       $("#ball").removeClass("ball_round");
+                       $("#ball").addClass("ball_square");
+                    }else{
+                        $("#ball").attr("class", "ball_round");
+                    }
+                });
+
+                </script>
+
+
+
+
+
+
+
+
     </div> <!--//   container  -->
 
     <!--  Bottom  -->
