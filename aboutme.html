@@ -29,10 +29,11 @@
     </script>
 
     <script>
-        var checkUnload = true;
-        $(window).on("beforeunload", function(){
-          if(checkUnload) return "이 페이지를 벗어나면 작성된 내용은 저장되지 않습니다.";
-        });
+        // 상당히 귀찮아
+        // var checkUnload = true;
+        // $(window).on("beforeunload", function(){
+        //   if(checkUnload) return "이 페이지를 벗어나면 작성된 내용은 저장되지 않습니다.";
+        // });
     </script>
 
 
@@ -42,8 +43,8 @@
     <!-- <link rel="stylesheet" href="//clearm.github.io/new2020/css/index.css" > -->
     <style>
         .fakeimg-div {
-           height: 100px;
-           background: #aaa;
+           height: 200px;
+           background: #dcdcdc;
          }
          .fake-img {
              width:100%;
@@ -55,7 +56,6 @@
              opacity: 1.0;
              filter: alpha(opacity=100); /* For IE8 and earlier */
          }
-
     </style>
 
 </head>
@@ -95,28 +95,26 @@
 <!--//   Menu  -->
 
 
-<!-- menu 관련 -->
-<script>
-    var selected_menu = "About Me";
+    <!-- menu 관련 -->
+    <script>
+        var selected_menu = "About Me";
 
-    var tag = document.createElement('script');
-    tag.src = "https://clearm.github.io/new2020/menu.js";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-</script>
-
-
-<!--  Menu  -->
-<nav  class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom:25px;">
-  <a class="navbar-brand" href="https://clearm.github.io/new2020/"> MJH </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav"> </ul>
-  </div>
-</nav>
-<!--//   Menu  -->
+        var tag = document.createElement('script');
+        tag.src = "https://clearm.github.io/new2020/menu.js";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <!--  Menu  -->
+    <nav  class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom:25px;">
+      <a class="navbar-brand" href="https://clearm.github.io/new2020/"> MJH </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav"> </ul>
+      </div>
+    </nav>
+    <!--//   Menu  -->
 
 
 
@@ -129,8 +127,11 @@
                   <div class="card-body">
                     <h2>About Me <br>(나에 대해)</h2>
                     <h5> Photo of me: 나 아니다..아직은</h5>
-                    <div class="fakeimg-div"> <img class="fake-img" src="http://clearm.github.io/new2020/img/jkandjp.jpg"   > </div>
+                    <div class="fakeimg-div">
+                        <img class="fake-img" src="http://clearm.github.io/new2020/img/jkandjp.jpg"   >
+                    </div>
                     <p> </p>
+                    <br>
                     <h2> This site is </h2>
                     <h5> 나의 이력서를 위한 사이트 </h5>
                     <p> 2020년부터 시작하여 많은 것을 채워갈 곳. 정말 잘 만들고 나면 서버구매도 결정될 사이트 </p>
@@ -146,7 +147,7 @@
 
             <h2>나의 11년 </h2>
             <h5> 정확히는 2020년 1월로 보자면 11년 5개월 </h5>
-            <div class="fakeimg-div"> Fake Image </div>
+            <div class="fakeimg-div">  </div>
             <p> 이미지에 대한 설명 들어가야 할까? </p>
             <p> 주로 PHP로 개발을 하였고, 처음의 시작은 포스회사 에서 영업정보시스템을 개선 하다가 그때 처음으로 웹프로그래밍이라는 것을 맨땅에 헤딩하면서 알았다.
                 학교에서 VB을 해봤지만 그땐 뭔소린지 몰라 C인가 받고 절대 안해야지 했는데... 회사에 들어가서 그때서야 클래스가 뭔지 뭐가 어떻게 작동하는지
@@ -170,7 +171,7 @@
             <!-- 여기가 두번째 글  -->
             <h2> 2019년에 대한 회고</h2>
             <h5> 작성일 : 2020-01-30</h5>
-            <div class="fakeimg-div">Fake Image</div>
+            <div class="fakeimg-div"> </div>
             <p> 회고가 유행인 것 같아 마련 한 곳 ... </p>
             <p> 2019년에는 특별한 건 없었다.  일은 많았겠지만 계속 이어지는 일을 하고 있다보니 끝기가 싫다는 기분.<br>
                 광고회사에 2년간 있었더니 별의별 이벤트는 다해본다. sns도 알게 되고 인생낭비라고는 하지만 그걸로 새로운 경제가 창출되니 나쁜 것 만은 아니다.
@@ -180,7 +181,7 @@
             <!-- 여기가 세번째 글  -->
             <h2> 2020년에 대한 기록</h2>
             <h5> 매일 한번 작성해 보자. 작성일에 의미를 두어야 하나? </h5>
-            <div class="fakeimg-div">Fake Image</div>
+            <div class="fakeimg-div"> </div>
             <p> 이걸 만든게 2020년 1월에 잘한 일이 되기를 .  </p>
             <p> 이걸로 부터 발전하려 한다.  .<br>
             </p>
@@ -189,7 +190,7 @@
             <!-- 여기가 네번째 글  -->
             <h2> 앞으로의 11년 </h2>
             <h5> 작성일 : 2020-01-30</h5>
-            <div class="fakeimg-div">Fake Image</div>
+            <div class="fakeimg-div"> </div>
             <p>앞으로도 11년은 더 살아야 겠죠? </p>
             <p> 공식적인 말투의 사람이 아닌 나로써 이런글을 쓰고 있다는게 쑥스럽지만 나에 대한 사이트 하나 정도는 있어야 개발자 아니냐 라는 생각에 일단 여기에 자리를 마련해 봅니다. 앞으로 쌓아갈 것이 더 많은
                 이곳의 새로운 만남이 기대 반 설렘 반으로
@@ -248,10 +249,7 @@
 
 </div> <!--//   container  -->
 
-<!--  Bottom  -->
- <!--//   Bottom  -->
-
-<footer style="text-align:center;padding:30px;margin:10px; color:white " class="bg-dark">
+<footer style="text-align:center;color:white;padding:50px; " class="bg-dark">
     <!-- <div class="container bg-info text-center bg-dark" style="padding:30px;margin:10px; color:white" > -->
      <p> Created By MJH & Bootstrap 4  </p>
     <!-- </div> -->
