@@ -115,9 +115,52 @@
 
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Card 의 모든 종류</h5>
-                    <p class="card-text"> 다 집어 넣었다..</p>
-                     <a href="layout_card.html" target="_blank" class="btn btn-primary"> 새창열기</a>
+                    <h5 class="card-title"> string 선택시 내용 다른 곳에 나오게 </h5>
+                    <p class="card-text">1) 마우스로 선택하면 선택한 글씨가 나오는 것 </p>
+                    <p class="card-text">2) john 이라는 글자가 있으면 css적용되게 하는 것  </p>
+                    <div>
+                        <style type="text/css">
+                            #console { width: 300px; height: 20px; border: 1px solid #ccc; }
+                        </style>
+
+                        <span>John Resig</span>
+                        <span>George Martin</span>
+                        <span>Malcom John Sinclair</span>
+                        <span>J. Ohn</span>
+
+                        <!-- -->
+                        <div id="text_div">
+                        <p id="aaa">abcdefghijklmnopqrstuvwxyz</p>
+                        <p>마우스로 드래그해서 선택한 글 나오기</p>
+                        </div>
+                        <div id="console"></div>
+
+                        <script type="text/javascript">
+                            function selectText() {
+                                var selectionText = "";
+                                if (document.getSelection) {
+                                    selectionText = document.getSelection();
+                                } else if (document.selection) {
+                                    selectionText = document.selection.createRange().text;
+                                }
+                                return selectionText;
+                            }
+
+                            var t_div = document.getElementById('text_div');
+                            t_div.addEventListener('mouseup', function(){
+                                document.getElementById("console").innerHTML = selectText();
+
+                            });
+
+                            //    document.onmouseup = function() {
+                            //        document.getElementById("console").innerHTML = selectText();
+                            //    }
+
+                            //위에는 선택시 선택 내용 나오게 하는 것이고 이것이 john 이란 단어 있으면 css변경하게 하는것
+                            $( "span:contains('John')" ).css( "text-decoration", "underline" ).css( "background-color", "blue" );
+                        </script>
+
+                    </div>
 
                   </div>
                   <div class="card-footer">
@@ -158,7 +201,7 @@
 
       </div> <!--// row -->
 
-    </div> <!--//   container  --> 
+    </div> <!--//   container  -->
 
     <!--  Bottom  -->
     <div class=" container-fluid bg-info text-center bg-dark" style="padding:30px;margin:10px; color:white" >
