@@ -2,7 +2,8 @@
 
 console.log("log");
 
-var menu_json = {"About Me": "index.html"
+var menu_json = {"Intro" : "index.html"
+, "About Me": "aboutme.html"
 , "현실" : "menu1.html"
 ,"꿈": "menu2.html"
 ,"목표": "menu3.html"
