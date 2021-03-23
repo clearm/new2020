@@ -4,13 +4,6 @@ https://clearm.github.io/new2020/
 HTML, JAVASCRIPT
 I will boast My HTML, JAVASCRIPT SKILL in this page.
 
-나 내가 이페이지 어떻게 만들었는지 까묵었음...
-
-
-
-
-
-
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

@@ -1,7 +1,4 @@
 
-
-console.log("log");
-
 var menu_json = {"Intro" : "index.html"
 , "About Me": "aboutme.html"
 , "현실" : "menu1.html"
