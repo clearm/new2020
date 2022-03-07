@@ -11,22 +11,23 @@
     <meta name="keywords" content="">
 
     <style>
-
         div {
-          width: 300px;
-          height: 180px;
           padding: 20px;
-          border: 8px solid #ff7473;
-          background: #efc69b;
+          border: 3px solid #e2dfea;
         }
 
-        .container{margin:0 auto;padding-top:300px;}
-
+        .container{width:360px;height: auto; margin:0 auto;padding-top:10px; background: #dddddd;}
+        .box {background:#dfd7f0; }
     </style>
 
 </head>
 <body>
     <div class="container">
+
+        <div class="box">
+            <span>처음 만난 날 : 2021년 7월 3일 </span>
+        </div>
+
         <div class="box">
             2021년 7월 3일 로부터
             <ul>
@@ -36,6 +37,15 @@
                 <li>300일은 <span id="date_300"></span> </li>
                 <li>500일은 <span id="date_500"></span> </li>
             </ul>
+        </div>
+        <div class="box">
+            상대방에게 기분을 색깔로 알려주세요~
+            오늘은 블루 ~ 우울해
+            오늘은 오렌지 ~ 즐거워
+            오늘은 핑크 ~ 두근두근해
+            오늘은 노랑 ~ 신경과민
+            오늘은 검정 ~ 그저 그런 날
+            오늘은 보라 ~ 미쳐버리겠어
         </div>
 
     </div>
@@ -53,7 +63,7 @@
 
         calcDate(100);  // 100일 기념일을 계산해서 표시합니다.
         calcDate(200);  // 200일 기념일을 계산해서 표시합니다.
-        calcDate(300);  // 1년 기념일을 계산해서 표시합니다.
+        calcDate(300);  //
         calcDate(500);  // 500일 기념일을 계산해서 표시합니다.
 
         function calcDate(days) {
